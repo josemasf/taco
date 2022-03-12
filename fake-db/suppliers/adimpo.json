@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "skun_code": "01231239",
+      "alter_code": "OFI-12726",
+      "description": "Papel oficina",
+      "client_desciption": "Papel oficina",
+      "stock": 32141,
+      "client_price": 0.23
+    },
+    {
+      "skun_code": "12314125",
+      "alter_code": "OFI-2312",
+      "description": "Grapadora mesa",
+      "client_desciption": "Grapadora mesa",
+      "stock": 120,
+      "client_price": 2.43
+    },
+    {
+      "skun_code": "141241412",
+      "alter_code": "OFI-54002",
+      "description": "Reposapiés",
+      "client_desciption": "Reposapiés",
+      "stock": 10,
+      "client_price": 12.11
+    },
+    {
+      "skun_code": "654578754",
+      "alter_code": "OFI-2001",
+      "description": "Boligrafo BIC azul",
+      "client_desciption": "Boligrafo BIC azul",
+      "stock": 11200,
+      "client_price": 0.05
+    },
+    {
+      "skun_code": "654578755",
+      "alter_code": "OFI-2001N",
+      "description": "Boligrafo BIC negro",
+      "client_desciption": "Boligrafo BIC negro",
+      "stock": 1050,
+      "client_price": 0.06
+    },
+    {
+      "skun_code": "654578756",
+      "alter_code": "OFI-2001R",
+      "description": "Boligrafo BIC rojo",
+      "client_desciption": "Boligrafo BIC rojo",
+      "stock": 31050,
+      "client_price": 0.05
+    },
+    {
+      "skun_code": "654578757",
+      "alter_code": "OFI-2001V",
+      "description": "Boligrafo BIC verde",
+      "client_desciption": "Boligrafo BIC verde",
+      "stock": 510,
+      "client_price": 0.07
+    }
+  ]
+}

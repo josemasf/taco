@@ -1,0 +1,111 @@
+{
+  "products": [
+    {
+      "code": "OFI-12726",
+      "name": "Papel oficina",
+      "stock": 141,
+      "price": 1.23,
+      "supplier": [
+        { "name": "ADIMPO" },
+        { "name": "UPS" },
+        { "name": "TechData" }
+      ]
+    },
+    {
+      "code": "OFI-2312",
+      "name": "Grapadora mesa",
+      "stock": 20,
+      "price": 2.53,
+      "supplier": [{ "name": "ADIMPO" }, { "name": "UPS" }]
+    },
+    {
+      "code": "OFI-54002",
+      "name": "Reposapies",
+      "stock": 0,
+      "price": 15.11,
+      "supplier": [{ "name": "ADIMPO" }, { "name": "TechData" }]
+    },
+    {
+      "code": "OFI-2001",
+      "name": "Boligrafo BIC azul",
+      "stock": 200,
+      "price": 1.05,
+      "supplier": [
+        { "name": "ADIMPO" },
+        { "name": "UPS" },
+        { "name": "TechData" }
+      ]
+    },
+    {
+      "code": "OFI-2001N",
+      "name": "Boligrafo BIC negro",
+      "stock": 50,
+      "price": 1.05,
+      "supplier": [
+        { "name": "ADIMPO" },
+        { "name": "UPS" },
+        { "name": "TechData" }
+      ]
+    },
+    {
+      "code": "OFI-2001R",
+      "name": "Boligrafo BIC rojo",
+      "stock": 450,
+      "price": 1.05,
+      "supplier": [
+        { "name": "ADIMPO" },
+        { "name": "UPS" },
+        { "name": "TechData" }
+      ]
+    },
+    {
+      "code": "OFI-2001V",
+      "name": "Boligrafo BIC verde",
+      "stock": 0,
+      "price": 1.05,
+      "supplier": [
+        { "name": "ADIMPO" },
+        { "name": "UPS" },
+        { "name": "TechData" }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "client": { "code": "000456", "name": "CAJASUR" },
+      "items": [
+        { "code": "OFI-2001V", "cantidad": 12 },
+        { "code": "OFI-2001N", "cantidad": 20 },
+        { "code": "OFI-2001", "cantidad": 20 }
+      ]
+    },
+    {
+      "client": { "code": "904623", "name": "CAJAMAR" },
+      "items": [
+        { "code": "OFI-12726", "cantidad": 100 },
+        { "code": "OFI-2001N", "cantidad": 10 },
+        { "code": "OFI-2001", "cantidad": 10 },
+        { "code": "OFI-54002", "cantidad": 5 }
+      ]
+    },
+    {
+      "client": { "code": "265471", "name": "COLEGIO LA SALLE" },
+      "items": [
+        { "code": "OFI-12726", "cantidad": 10 },
+        { "code": "OFI-2001N", "cantidad": 5 },
+        { "code": "OFI-2001", "cantidad": 5 },
+        { "code": "OFI-2312", "cantidad": 2 }
+      ]
+    },
+    {
+      "client": { "code": "114521", "name": "EOE MALAGA" },
+      "items": [
+        { "code": "OFI-12726", "cantidad": 150 },
+        { "code": "OFI-2001V", "cantidad": 50 },
+        { "code": "OFI-2001N", "cantidad": 10 },
+        { "code": "OFI-2001", "cantidad": 10 },
+        { "code": "OFI-2312", "cantidad": 2 }
+      ]
+    }
+  ]
+}

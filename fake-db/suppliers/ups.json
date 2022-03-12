@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "skun": "01231239",
+      "alterskun": "OFI-12726",
+      "name": "Papel oficina",
+      "stock": 1141,
+      "price": 1.23
+    },
+    {
+      "skun": "12314125",
+      "alterskun": "OFI-2312",
+      "name": "Grapadora mesa",
+      "stock": 570,
+      "price": 3.43
+    },
+    {
+      "skun": "141241412",
+      "alterskun": "OFI-54002",
+      "name": "Reposapiés",
+      "stock": 0,
+      "price": 2.11
+    },
+    {
+      "skun": "654578754",
+      "alterskun": "OFI-2001",
+      "name": "Boligrafo BIC azul",
+      "stock": 50000,
+      "price": 0.04
+    },
+    {
+      "skun": "654578755",
+      "alterskun": "OFI-2001N",
+      "name": "Boligrafo BIC negro",
+      "stock": 11050,
+      "price": 0.04
+    },
+    {
+      "skun": "654578756",
+      "alterskun": "OFI-2001R",
+      "name": "Boligrafo BIC rojo",
+      "stock": 1650,
+      "price": 0.04
+    },
+    {
+      "skun": "654578757",
+      "alterskun": "OFI-2001V",
+      "name": "Boligrafo BIC verde",
+      "stock": 340,
+      "price": 0.04
+    }
+  ]
+}
