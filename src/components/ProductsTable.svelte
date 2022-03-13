@@ -28,17 +28,17 @@
     </Row>
   </Head>
   <Body>
-    {#each items as item (item.code)}
+    {#each items as product (product.code)}
       <Row>
-        <Cell>{item.code}</Cell>
-        <Cell>{item.name}</Cell>
-        <Cell numeric>{item.stock}</Cell>
-        <Cell numeric>{item.price}</Cell>
-        {#if item.supplier}
-          {#each item.supplier as supplier (supplier.name)}
+        <Cell>{product.code}</Cell>
+        <Cell>{product.name}</Cell>
+        <Cell numeric>{product.stock}</Cell>
+        <Cell numeric>{product.price}</Cell>
+        {#if product.supplier}
+          {#each product.supplier as supplier (supplier.name)}
             <svelte:component
               this={suppliers[supplier.name]}
-              productCode={item.code}
+              {product}
               {supplier}
             />
           {/each}

@@ -1,14 +1,14 @@
 <script lang="ts">
   import { Cell } from "@smui/data-table";
   import ProductsTableCellSupplier from "../../components/ProductsTableCellSupplier.svelte";
-  import type { Supplier } from "../../typings/types";
+  import type { Product, Supplier } from "../../typings/types";
   import type { AdimpoDto } from "../../typings/DTOs";
 
   export let supplier: Supplier;
-  export let productCode;
-  async function loadDataAdimpo() {
+  export let product: Product;
+  async function loadDataSupplier() {
     const res = await fetch(
-      `http://localhost:3001/products?alterskun=${productCode}`
+      `http://localhost:3001/products?alterskun=${product.code}`
     );
     const productSupplier = await res.json();
 
@@ -27,11 +27,11 @@
     }
   }
 
-  let promiseAdimpo = loadDataAdimpo();
+  let promise = loadDataSupplier();
 </script>
 
 <Cell>
-  {#await promiseAdimpo}
+  {#await promise}
     <p>...waiting</p>
   {:then product}
     <ProductsTableCellSupplier {supplier} {product} />

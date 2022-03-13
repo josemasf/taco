@@ -3,31 +3,40 @@
 
   import { Cell } from "@smui/data-table";
   import ProductsTableCellSupplier from "../../components/ProductsTableCellSupplier.svelte";
-  import type { Supplier } from "../../typings/types";
+  import type { TechdataDTOP } from "../../typings/DTOs";
+  import type { Product, Supplier } from "../../typings/types";
 
   export let supplier: Supplier;
-  export let productCode;
-  async function loadDataAdimpo() {
+  export let product: Product;
+  async function loadDataSupplier() {
     const res = await fetch(
-      `http://localhost:3003/products?alterskun=${productCode}`
+      `http://localhost:3003/products?codigo_cliente=${product.code}`
     );
-    const product = await res.json();
+    const productSupplier = await res.json();
 
     if (res.ok) {
-      return product[0];
+      return (productSupplier as TechdataDTOP[]).map((product) => {
+        const { nombre, codigo_cliente, precio_final, exists } = product;
+        return {
+          name: nombre,
+          code: codigo_cliente,
+          price: precio_final,
+          stock: exists,
+        };
+      })[0];
     } else {
-      throw new Error(product);
+      throw new Error(productSupplier);
     }
   }
 
-  let promiseAdimpo = loadDataAdimpo();
+  let promise = loadDataSupplier();
 </script>
 
 <Cell>
-  {#await promiseAdimpo}
+  {#await promise}
     <p>...waiting</p>
-  {:then product}
-    {#if product}
+  {:then productSupplier}
+    {#if productSupplier}
       <ProductsTableCellSupplier {supplier} {product} />
     {:else}
       <Set chips={["discontinued"]} let:chip nonInteractive>

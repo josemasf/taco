@@ -7,3 +7,14 @@ export type AdimpoDto = {
   description: string;
   ean_code: string;
 };
+export type TechdataDTOP = {
+  codigo: string;
+  codigo_cliente: string;
+  precio_final: number;
+  exists: number;
+  nombre: string;
+};
+export type UpsDTOP = {
+  price: number;
+  stock: number;
+};
