@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Chip, { Text, Set, LeadingIcon } from "@smui/chips";
+
   import { Cell } from "@smui/data-table";
   import ProductsTableCellSupplier from "../../components/ProductsTableCellSupplier.svelte";
   import type { Supplier } from "../../typings/types";
@@ -25,6 +27,15 @@
   {#await promiseAdimpo}
     <p>...waiting</p>
   {:then product}
-    <ProductsTableCellSupplier {supplier} {product} />
+    {#if product}
+      <ProductsTableCellSupplier {supplier} {product} />
+    {:else}
+      <Set chips={["discontinued"]} let:chip nonInteractive>
+        <Chip {chip}>
+          <LeadingIcon class="material-icons">remove_shopping_cart</LeadingIcon>
+          <Text>{chip}</Text>
+        </Chip>
+      </Set>
+    {/if}
   {/await}
 </Cell>
