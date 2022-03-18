@@ -18,3 +18,9 @@ export type UpsDTOP = {
   price: number;
   stock: number;
 };
+
+export type SupplierAvailability = {
+  supplier: string;
+  price: number;
+  stock: number;
+};

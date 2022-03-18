@@ -1,9 +1,8 @@
 <script lang="ts">
   import DataTable, { Head, Row, Cell } from "@smui/data-table";
-  import type { Product, Supplier } from "../typings/types";
+  import type { SupplierAvailability } from "../typings/DTOs";
 
-  export let supplier: Supplier;
-  export let product: Product;
+  export let product: SupplierAvailability;
 </script>
 
 <Cell>
@@ -11,7 +10,7 @@
     <Head>
       <Row>
         <Cell>
-          {supplier.name}
+          {product.supplier}
         </Cell>
       </Row>
     </Head>

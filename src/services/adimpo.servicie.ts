@@ -1,18 +1,18 @@
 import axios from "axios";
-import type { TechdataDTOP } from "../typings/DTOs";
+import type { AdimpoDto } from "../typings/DTOs";
 
 export default async function loadDataSupplier(productCode: string) {
   const res = await axios.get(
-    `http://localhost:3003/products?codigo_cliente=${productCode}`
+    `http://localhost:3001/products?alterskun=${productCode}`
   );
   const productSupplier = await res.data;
 
   if (res.statusText === "OK") {
-    return (productSupplier as TechdataDTOP[]).map((product) => {
-      const { precio_final, exists } = product;
+    return (productSupplier as AdimpoDto[]).map((product) => {
+      const { client_price, stock } = product;
       return {
-        price: precio_final,
-        stock: exists,
+        price: client_price,
+        stock,
       };
     })[0];
   } else {
