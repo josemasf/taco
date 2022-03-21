@@ -1,0 +1,7 @@
+{
+  "name": "Serverless endpoint availables",
+  "includeVersion": true,
+  "hideGenerator": true,
+  "out": "api-doc",
+  "readme": "README-api.md"
+}

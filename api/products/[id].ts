@@ -1,4 +1,4 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 import TechdataService from "../../src/services/techdata.servicie";
 import AdimpoService from "../../src/services/adimpo.servicie";
 import UPSService from "../../src/services/ups.servicie";
