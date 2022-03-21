@@ -1,3 +1,7 @@
+/**
+ * @module DTOs
+ */
+
 export type AdimpoDto = {
   skun_code: string;
   alter_code: string;
