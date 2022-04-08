@@ -1,4 +1,4 @@
-# TACO
+# TACO 🌮
 
 Website de ejemplo para la ponencia sobre serverless.
 
